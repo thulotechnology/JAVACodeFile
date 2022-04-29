@@ -1,20 +1,20 @@
 public class ConditionWork {
     public static void main(String[] args) {
-        int noOfDay = 4;
+        int noday = 4;
 
-        if(noOfDay == 1){
+        if(noday == 1){
             System.out.println("Sunday");
-        }else if(noOfDay == 2){
+        }else if(noday == 2){
             System.out.println("Monday");
-        }else if(noOfDay == 3){
+        }else if(noday == 3){
             System.out.println("Tuesday");
-        }else if(noOfDay == 4){
+        }else if(noday == 4){
             System.out.println("Wed");
-        }else if(noOfDay == 5){
+        }else if(noday == 5){
             System.out.println("Thru");
-        }else if(noOfDay == 6){
+        }else if(noday == 6){
             System.out.println("Friday");
-        }else if(noOfDay == 7){
+        }else if(noday == 7){
             System.out.println("Saturday");
         }
 
