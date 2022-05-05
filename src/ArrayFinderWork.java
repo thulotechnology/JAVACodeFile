@@ -3,8 +3,15 @@ public class ArrayFinderWork {
         String[] names = {"New York", "California", "Tokyo", "Phuket",};
         String toChceck = "Tokyo";
         boolean isAvailable = false;
-        for(String name : names){
-            if(name.equals(toChceck)){
+
+//        for(String name : names){
+//            if(name.equals(toChceck)){
+//                isAvailable = true;
+//            }
+//        }
+
+        for(int i =0; i<names.length; i++){
+            if(names[i].equals(toChceck)){
                 isAvailable = true;
             }
         }

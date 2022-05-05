@@ -1,23 +1,22 @@
-import java.io.File;  // For File Work Import the File class
 
-public class Main{
+class Mic{
+    void printInfo(){
+        System.out.println("Welcome to Default Mic Info");
+    }
+}
+
+class Boya extends Mic{
+    void printInfo(){
+        super.printInfo();
+        System.out.println("Welcome to Boya Mic Info");
+    }
+}
+public class Main {
     public static void main(String[] args) {
-        try {
+        Mic m1 = new Mic();
+        Boya b1 = new Boya();
 
-
-            for(int i =1; i<=100; i++){
-
-                File f = new File(i+".txt");
-
-                if (f.delete()) {
-                    System.out.println("File is successfully " + f.getName());
-                } else {
-                    System.out.println("Seems like file already exist.");
-                }
-            }
-
-        } catch (Exception e) {
-            System.out.println("An error occurred. "+e.getMessage());
-        }
+        m1.printInfo();
+       b1.printInfo();
     }
 }
